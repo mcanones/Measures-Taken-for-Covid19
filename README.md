@@ -1,19 +1,17 @@
 # Project-2-data-pipelines
 
-# Shark/human interactions
-
 <p align="center">
  <img src="input/Image_1.jpg"/>
 </p>
 
 ## Scope:
 
-The aim of this project is to generate an automatic report with the Infection Trajectory of a particular country. Moreover, two infection trajectories of two different countries will be compared with regard a measure category, to get insight on which countries acted earlier against COVID-19. The purpose of introducing measures is preventing and delaying the spread of the virus so that large portions of the population aren’t sick at the same time.
+The aim of this project is to compare the COVID-19 infection trajectories of two different countries. This way, it can be ascertained which countries took measures against the pandemic at the earliest stage. The purpose of introducing measures is preventing and delaying the spread of the virus so that large portions of the population aren’t sick at the same time.
 
 ## Source:
 
 · Dataset URL: https://www.kaggle.com/barun2104/government-measures-to-combat-covid19
-· API URL: 
+· API URL: https://about-corona.net/documentation
 
 ## Description of the dataset:
 
@@ -40,29 +38,31 @@ Alternative source | Alternative source, if any
 
 ## Hipotheses:
 
-1) The measures under analysis will be those **approved** to enter the country.
-
-2) The columns of interest will be:
- - COUNTRY
- - ISO
- - REGION
- - CATEGORY
- - MEASURE
- - COMMENTS
- - SOURCE
- - ENTRY_DATE
+1) The columns of interest will be:
+    - COUNTRY
+    - ISO
+    - REGION
+    - CATEGORY
+    - MEASURE
+    - COMMENTS
+    - SOURCE
+    - ENTRY_DATE
  
- 3) Some cleaning will be done to the original dataset:
- - Drop duplicates
- - Drop rows with higher number of null values
- - Filling Null Values
- - Correcting values in columns
+ 2) Some cleaning will be done to the original dataset:
+    - Drop duplicates
+    - Drop rows with higher number of null values
+    - Filling Null Values
+    - Correcting values in columns
 
- NOTE: The API used in this project provides information about the COVID evolution throughout time for a specific country. It requests a string paremeter with the country code in ISO 3166-1 alpha-2 format. For this reason, the ISO column will be modified to meet these requirements.
+ 3) The API used in this project provides information about the COVID evolution throughout time for a specific country. It requests a string paremeter with the country code in ISO 3166-1 alpha-2 format. For this reason, the ISO column will be modified to meet these requirements.
+
+ 4) In the output folder, they can be found the dataset after cleaning and mining; clean.csv and mining.csv, respectively.
+
+ 5) The main.py file reads the mining.csv, filters the data with some parameters defined from the user and generates images and a automatic report. It generates also two interactive tables in the browser with detailed comments about the measures applied in each country. 
 
 ## To take into consideration
 
-- If you download this code, some libraries are requied to execute it (smtplib, getpass, argparse, nbformat, plotly.graph_objects, among others.)
+- If you download this code, some libraries are requied to execute it (smtplib, getpass, argparse, nbformat, plotly, orca, among others.)
 
 - Obtain help to run the program from command line: python3 main.py -h
 
