@@ -10,12 +10,10 @@ The aim of this project is to compare the COVID-19 infection trajectories of two
 
 ## Source:
 
-· Dataset URL: https://www.kaggle.com/barun2104/government-measures-to-combat-covid19
-· API URL: https://about-corona.net/documentation
+- Dataset URL: https://www.kaggle.com/barun2104/government-measures-to-combat-covid19
+- API URL: https://about-corona.net/documentation
 
 ## Description of the dataset:
-
-COLUMNS:
 
 Column name   | Description
 ------------- | -------------
