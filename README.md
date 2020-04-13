@@ -62,7 +62,9 @@ Alternative source | Alternative source, if any
 
 - If you download this code, some libraries are requied to execute it (smtplib, getpass, argparse, nbformat, plotly, orca, among others.)
 
-- Obtain help to run the program from command line: python3 main.py -h
+- In main.py change ```python **from@gmail.com**``` with your personal email. 
 
-- In main.py change **<from@gmail.com>** with your personal email. 
+- Obtain help to run the program from command line: ```bash python3 main.py -h```
+
+- Example to execute the program: ```bash python3 main.py --p1 ES --p2 NL --p3 mailto@gmail.com```
 
